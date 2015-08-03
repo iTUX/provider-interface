@@ -5,8 +5,8 @@
 Bas-urlen till APIt: http://ituxportalen.se/pubapi.php/2.1/
 För att testa att api är uppe: http://ituxportalen.se/pubapi.php/ping
 
-Bas-urlen till stage-APIt: http://stage.ituxportalen.se/pubapi.php/2.1/
-För att testa att api är uppe: http://stage.ituxportalen.se/pubapi.php/ping
+Bas-urlen till stage-APIt: http://ituxportalen.se:88/pubapi.php/2.1/
+För att testa att api är uppe: http://ituxportalen.se:88/pubapi.php/ping
 
 Under bas-urlen förväntas tjänsterna finnas, bland annat /orders/ (http://ituxportalen.se/pubapi.php/2.1/orders/) och /accesses/ (http://ituxportalen.se/pubapi.php/2.1/accesses/)
 
