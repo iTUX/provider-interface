@@ -8,7 +8,7 @@ Fältbeskrivningarna är identiska med Bulk-APIt.
 
 Request:
 ```http
-GET /api/2.1/accesses/STTA0001 HTTP/1.1
+GET /2.1/accesses/STTA0001 HTTP/1.1
 ```
 
 Response:

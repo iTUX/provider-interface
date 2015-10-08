@@ -6,7 +6,7 @@ Tjänsteleverantör X använder Feasibility API för att beskriva vilka accesser
 
 Request:
 ```http
-GET /api/2.1/accesses/ HTTP/1.1
+GET /2.1/accesses/ HTTP/1.1
 ```
 
 Response:
@@ -352,7 +352,7 @@ Exempel på anropssekvens:
 
 Request:
 ```http
-GET /api/2.1/accesses/ HTTP/1.1
+GET /2.1/accesses/ HTTP/1.1
 ```
 
 Response:
@@ -367,7 +367,7 @@ Vid påföljande anrop skickar Tjänsteleverantör X PI med "If-Modified-Since"-
 
 Request:
 ```http
-GET /api/2.1/accesses/ HTTP/1.1
+GET /2.1/accesses/ HTTP/1.1
 If-Modified-Since: Fri, 31 Aug 2012 12:03:28 GMT
 ...
 ```
