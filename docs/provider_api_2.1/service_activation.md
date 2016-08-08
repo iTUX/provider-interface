@@ -82,6 +82,96 @@ Content-Type: application/json
 }
 ```
 
+## Orderläggning, Exempel: Schemalagd Aktivering
+
+Request:
+```http
+POST /2.1/orders/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "accessId": "STTA0001",
+    "service": "BB-100-10",
+    "operation": "ACTIVATE",
+    "operationDate": "2016-08-15",
+    "forcedTakeover": false, 
+    "customer": {
+        "firstName": "Kalle",
+        "lastName": "Anka", 
+        "socialSecurityNumber": "192012317777",
+        "email": "karl@ankeborg.se",
+        "phone": "031-119119",
+        "mobilePhone": ""
+    },
+    "deliveryAddress": {
+        "smsNotificationPhone": "",
+        "streetName": "Testvägen", 
+        "streetNumber": "100",
+        "streetLittera": "",
+        "zipCode": "10000", 
+        "city": "Ankeborg"
+    },
+    "equipment": [
+        { "vendorId": "TL_BROADBAND" }
+    ]
+}
+```
+
+Response:
+```http
+HTTP/1.1 201 CREATED
+Last-Modified: Fri, 31 Aug 2012 12:03:28 GMT
+Location: /2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061
+Content-Type: application/json
+
+{
+    "path": "/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
+    "accessId": "STTA0001",
+    "service": "BB-100-10",
+    "operation": "ACTIVATE",
+    "operationDate": "2016-08-15",
+    "state": "RECEIVED",
+    "message": ""
+}
+```
+
+State ändras till `DONE_SUCCESS` när operationDate har passerats och tjänsten är aktiverad.
+
+## Orderläggning, Exempel: Avaktivering
+
+Request:
+```http
+POST /2.1/orders/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "accessId": "STTA0001",
+    "service": "BB-100-10",
+    "operation": "DEACTIVATE",
+    "operationDate": "2016-09-10"
+}
+```
+
+Response:
+```http
+HTTP/1.1 200 OK
+Last-Modified: Fri, 31 Aug 2012 12:03:28 GMT
+Location: /2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061
+Content-Type: application/json
+
+{
+    "path": "/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
+    "accessId": "STTA0001",
+    "service": "BB-100-10",
+    "operation": "DEACTIVATE",
+    "operationDate": "2016-09-10"
+    "state": "RECEIVED",
+    "message": ""
+}
+```
+
+State ändras till `DONE_SUCCESS` när operationDate har passerats och tjänsten är avaktiverad.
+
 ## Orderläggning - Fältbeskrivningar
 
 <table>
@@ -118,6 +208,16 @@ Content-Type: application/json
         </tr>
         <tr>
             <td>
+                <code>operationDate</code>
+            </td>
+            <td>
+               Anger datum då aktiveringen/avaktiveringen ska utföras. Om värdet exkluderas eller innehåller datum som har passerat används dagens datum.<br>
+               Framtida Datum med formatet: yyyy-mm-dd
+               Exempel: "2017-08-12". <em>text, valfri</em>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <code>forcedTakeover</code>
             </td>
             <td>
@@ -140,7 +240,7 @@ Content-Type: application/json
                 <code>customer.socialSecurityNumber</code>
             </td>
             <td>
-                Format: yyyymmddnnnn.
+                Format: yyyymmddnnnn
             </td>
         </tr>
         <tr>
