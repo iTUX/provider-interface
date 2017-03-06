@@ -2,13 +2,14 @@
 
 ## Endpoints
 
-Bas-urlen till APIt: http://ituxportalen.se/pubapi.php/2.1/
-För att testa att api är uppe: http://ituxportalen.se/pubapi.php/ping
+* **Bas-url till Order-API Version 2.1:** https://ituxportalen.se/pubapi.php/2.1/
+* **För att testa att API är uppe:** https://ituxportalen.se/pubapi.php/ping
 
-Bas-urlen till stage-APIt: http://ituxportalen.se:88/pubapi.php/2.1/
-För att testa att api är uppe: http://ituxportalen.se:88/pubapi.php/ping
 
-Under bas-urlen förväntas tjänsterna finnas, bland annat /orders/ (http://ituxportalen.se/pubapi.php/2.1/orders/) och /accesses/ (http://ituxportalen.se/pubapi.php/2.1/accesses/)
+* **Bas-urlen till stage-API:** http://ituxportalen.se:8080/pubapi.php/2.1/
+* **För att testa att API är uppe:** http://ituxportalen.se:8080/pubapi.php/ping
+
+Under bas-urlen förväntas tjänsterna finnas, bland annat /orders/ (https://ituxportalen.se/pubapi.php/2.1/orders/) och /accesses/ (https://ituxportalen.se/pubapi.php/2.1/accesses/)
 
 ## Autentisering
 
@@ -19,4 +20,3 @@ Autentisering av Service Provider sker genom HTTP BASIC. Se [RFC-2617][rfc2617].
 ## Character Encoding
 
 Alla APIer använder UTF-8. 
-

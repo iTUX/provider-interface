@@ -2,11 +2,12 @@
 
 ## Endpoints
 
-Bas-urlen till API v2.2: http://ituxportalen.se/api/providerInterface/2.2/
-För att testa att api v2.2 är uppe: http://ituxportalen.se/api/ping
+* **Bas-url till Order-API Version 2.2:** https://ituxportalen.se/pubapi.php/2.2/
+* **För att testa att api är uppe:** https://ituxportalen.se/pubapi.php/ping
 
-Bas-urlen till stage-APIt: http://ituxportalen.se:88/api/providerInterface/2.2/
-För att testa att api är uppe: http://ituxportalen.se:88/api/ping
+
+* **Bas-urlen till stage-API:** http://ituxportalen.se:8080/api/providerInterface/2.2/
+* **För att testa att api är uppe:** http://ituxportalen.se:8080/api/ping
 
 ## Autentisering
 

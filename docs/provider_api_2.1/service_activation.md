@@ -42,7 +42,7 @@ Location: /2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061
 Content-Type: application/json
 
 {
-    "path": "/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
+    "path": "/pubapi.php/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
     "accessId": "STTA0001",
     "service": "BB-100-10",
     "operation": "ACTIVATE",
@@ -73,7 +73,7 @@ Location: /2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061
 Content-Type: application/json
 
 {
-    "path": "/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
+    "path": "/pubapi.php/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
     "accessId": "STTA0001",
     "service": "BB-100-10",
     "operation": "DEACTIVATE",
@@ -125,7 +125,7 @@ Location: /2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061
 Content-Type: application/json
 
 {
-    "path": "/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
+    "path": "/pubapi.php/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
     "accessId": "STTA0001",
     "service": "BB-100-10",
     "operation": "ACTIVATE",
@@ -160,7 +160,7 @@ Location: /2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061
 Content-Type: application/json
 
 {
-    "path": "/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
+    "path": "/pubapi.php/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
     "accessId": "STTA0001",
     "service": "BB-100-10",
     "operation": "DEACTIVATE",
@@ -316,7 +316,7 @@ Content-Type: application/json
 Location: /2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061
 
 {
-    "path": "/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
+    "path": "/pubapi.php/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
     "accessId": "STTA0001",
     "service": "BB-100-10",
     "operation": "ACTIVATE",
@@ -360,7 +360,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "path": "/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
+    "path": "/pubapi.php/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
     "accessId": "STTA0001",
     "service": "BB-100-10",
     "operation": "ACTIVATE",
@@ -407,7 +407,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "path": "/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
+    "path": /pubapi.php/2.1/orders/ec4bc754-6a30-11e2-a585-4fc569183061",
     "accessId": "STTA0001",
     "service": "BB-100-10",
     "operation": "ACTIVATE",

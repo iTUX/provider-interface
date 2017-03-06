@@ -2,12 +2,16 @@
 
 Link Status API används för felsökning av tjänster. Det erbjuder aktuell information of kunds länk i access-switch/router.
 
+**Notera att Link Status API har en separat endpoint från övriga 2.2**
+
+Bas-URL för Link Status: **https://ituxportalen.se/api/providerInterface/2.2**
+
 ### Exempel
 
 Anrop:
 
 ```http
-GET /2.2/providerInterface/accesses/STTA0001/link HTTP/1.1
+GET /accesses/STTA0001/link HTTP/1.1
 ```
 
 Svar när länken är uppe:
@@ -101,8 +105,7 @@ Content-Type: application/json
 		Enheten är mbps, giltiga värden är: 10, 100, 1000.
             </td>
         </tr>
-
-	<tr>
+	      <tr>
             <td>
                 <code>up / clients</code>
             </td>
