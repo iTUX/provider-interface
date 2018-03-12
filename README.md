@@ -6,7 +6,8 @@ API exponerar de accesser som ställs till förfogande för tjänsteleverantöre
 
 ## Versioner
 
-* [API 2.2](docs/provider_api_2.2/index.md) (Under utveckling)
+* [API 2.3](docs/provider_api_2.3/index.md) (Under utveckling)
+* [API 2.2](docs/provider_api_2.2/index.md)
 * [API 2.1](docs/provider_api_2.1/index.md)
 
 ## Licens
